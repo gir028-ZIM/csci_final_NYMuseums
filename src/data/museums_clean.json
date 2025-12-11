@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Metropolitan Museum of Art",
+    "tel": "(212) 535-7710",
+    "url": "https://www.metmuseum.org/",
+    "address1": "1000 5th Ave",
+    "address2": "",
+    "city": "New York",
+    "zip": "10028",
+    "the_geom": "POINT(-73.963244 40.779437)",
+    "lat": 40.779437,
+    "lon": -73.963244
+  },
+  {
+    "name": "American Museum of Natural History",
+    "tel": "(212) 769-5100",
+    "url": "https://www.amnh.org/",
+    "address1": "Central Park West & 79th St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10024",
+    "the_geom": "POINT(-73.973988 40.781324)",
+    "lat": 40.781324,
+    "lon": -73.973988
+  },
+  {
+    "name": "Museum of Modern Art (MoMA)",
+    "tel": "(212) 708-9400",
+    "url": "https://www.moma.org/",
+    "address1": "11 W 53rd St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10019",
+    "the_geom": "POINT(-73.977622 40.761433)",
+    "lat": 40.761433,
+    "lon": -73.977622
+  }
+]

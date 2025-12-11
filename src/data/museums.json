@@ -36,191 +36,30 @@
     "lon": -73.977622
   }
 ]
-
-{
-	"meta" : {
-		"view" : {
-			"id" : "fn6f-htvy",
-			"name" : "MUSEUM",
-			"assetType" : "dataset",
-			"attribution" : "Department of Information Technology & Telecommunications (DoITT)",
-			"averageRating" : 0,
-			"category" : "Recreation",
-			"createdAt" : 1403023071,
-			"description" : "Locations of New York City Museums",
-			"diciBackend" : false,
-			"displayType" : "table",
-			"downloadCount" : 9269,
-			"hideFromCatalog" : false,
-			"hideFromDataJson" : false,
-			"indexUpdatedAt" : 1536599097,
-			"locked" : false,
-			"newBackend" : true,
-			"numberOfComments" : 0,
-			"oid" : 15713270,
-			"provenance" : "official",
-			"publicationAppendEnabled" : false,
-			"publicationGroup" : 6269798,
-			"publicationStage" : "published",
-			"rowsUpdatedAt" : 1403023071,
-			"tableId" : 6269798,
-			"totalTimesRated" : 0,
-			"viewCount" : 2038,
-			"viewLastModified" : 1708388058,
-			"viewType" : "tabular",
-			"approvals" : [ {
-				"reviewedAt" : 1407164259,
-				"reviewedAutomatically" : true,
-				"state" : "approved",
-				"submissionId" : 6177556,
-				"submissionObject" : "public_audience_request",
-				"submissionOutcome" : "change_audience",
-				"submittedAt" : 1407164259,
-				"targetAudience" : "public",
-				"workflowId" : 2285,
-				"submissionDetails" : {
-					"permissionType" : "READ"
-				},
-				"submissionOutcomeApplication" : {
-					"failureCount" : 0,
-					"status" : "success"
-				},
-				"submitter" : {
-					"id" : "5fuc-pqz2",
-					"displayName" : "NYC OpenData"
-				}
-			} ],
-			"clientContext" : {
-				"clientContextVariables" : [ ],
-				"inheritedVariables" : { }
-			},
-			"columns" : [ {
-				"id" : -1,
-				"name" : "sid",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":sid",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "id",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":id",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "position",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":position",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "created_at",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":created_at",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "created_meta",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":created_meta",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "updated_at",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":updated_at",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "updated_meta",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":updated_meta",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : -1,
-				"name" : "meta",
-				"dataTypeName" : "meta_data",
-				"fieldName" : ":meta",
-				"position" : 0,
-				"renderTypeName" : "meta_data",
-				"format" : { },
-				"flags" : [ "hidden" ]
-			}, {
-				"id" : 234876519,
-				"name" : "the_geom",
-				"dataTypeName" : "point",
-				"fieldName" : "the_geom",
-				"position" : 1,
-				"renderTypeName" : "point",
-				"tableColumnId" : 33441160,
-				"cachedContents" : {
-					"non_null" : "130",
-					"null" : "0",
-					"top" : [ {
-						"item" : {
-							"coordinates" : [ -74.00693426094169, 40.72557180583998 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -74.00290417204171, 40.72245118852784 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -73.99883836090484, 40.72074946881006 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -73.99381737049632, 40.738045683847 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -73.99963036903092, 40.721127449476676 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -73.99779152534921, 40.74002038014153 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
-							"coordinates" : [ -73.97985598415269, 40.57526324252061 ],
-							"type" : "Point"
-						},
-						"count" : "1"
-					}, {
-						"item" : {
+[
+  {
+    "name": "Metropolitan Museum of Art",
+    "tel": "(212) 535-7710",
+    "url": "https://www.metmuseum.org/",
+    "address1": "1000 5th Ave",
+    "address2": "",
+    "city": "New York",
+    "zip": "10028",
+    "the_geom": "POINT(-73.963244 40.779437)",
+    "lat": 40.779437,
+    "lon": -73.963244
+  },
+  {
+    "name": "American Museum of Natural History",
+    "tel": "(212) 769-5100",
+    "url": "https://www.amnh.org/",
+    "address1": "Central Park West & 79th St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10024",
+    "the_geom": "POINT(-73.973988 40.781324)",
+    "lat": 40.781324,
+    "lon": -73.973988
 							"coordinates" : [ -73.99386877223978, 40.737986764588406 ],
 							"type" : "Point"
 						},
@@ -408,44 +247,44 @@
 						"item" : "(718) 206-0545",
 						"count" : "2"
 					}, {
-						"item" : "",
-						"count" : "2"
-					}, {
-						"item" : "(212) 864-7752",
-						"count" : "1"
-					}, {
-						"item" : "(212) 908-4110",
-						"count" : "1"
-					}, {
-						"item" : "(646) 437-4200",
-						"count" : "1"
-					}, {
-						"item" : "(718) 699-0005",
-						"count" : "1"
-					}, {
-						"item" : "(212) 777-1089",
-						"count" : "1"
-					}, {
-						"item" : "(212) 375-0475",
-						"count" : "1"
-					}, {
-						"item" : "(212) 288-6400",
-						"count" : "1"
-					}, {
-						"item" : "(212) 294-8301",
-						"count" : "1"
-					}, {
-						"item" : "(212) 219-2166",
-						"count" : "1"
-					}, {
-						"item" : "(212) 849-8400",
-						"count" : "1"
-					}, {
-						"item" : "(718) 784-7700",
-						"count" : "1"
-					}, {
-						"item" : "(212) 246-6860",
-						"count" : "1"
+						[
+							{
+								"name": "Metropolitan Museum of Art",
+								"tel": "(212) 535-7710",
+								"url": "https://www.metmuseum.org/",
+								"address1": "1000 5th Ave",
+								"address2": "",
+								"city": "New York",
+								"zip": "10028",
+								"the_geom": "POINT(-73.963244 40.779437)",
+								"lat": 40.779437,
+								"lon": -73.963244
+							},
+							{
+								"name": "American Museum of Natural History",
+								"tel": "(212) 769-5100",
+								"url": "https://www.amnh.org/",
+								"address1": "Central Park West & 79th St",
+								"address2": "",
+								"city": "New York",
+								"zip": "10024",
+								"the_geom": "POINT(-73.973988 40.781324)",
+								"lat": 40.781324,
+								"lon": -73.973988
+							},
+							{
+								"name": "Museum of Modern Art (MoMA)",
+								"tel": "(212) 708-9400",
+								"url": "https://www.moma.org/",
+								"address1": "11 W 53rd St",
+								"address2": "",
+								"city": "New York",
+								"zip": "10019",
+								"the_geom": "POINT(-73.977622 40.761433)",
+								"lat": 40.761433,
+								"lon": -73.977622
+							}
+						]
 					}, {
 						"item" : "(212) 369-4880",
 						"count" : "1"
