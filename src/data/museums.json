@@ -1,0 +1,851 @@
+[
+  {
+    "name": "Metropolitan Museum of Art",
+    "tel": "(212) 535-7710",
+    "url": "https://www.metmuseum.org/",
+    "address1": "1000 5th Ave",
+    "address2": "",
+    "city": "New York",
+    "zip": "10028",
+    "the_geom": "POINT(-73.963244 40.779437)",
+    "lat": 40.779437,
+    "lon": -73.963244
+  },
+  {
+    "name": "American Museum of Natural History",
+    "tel": "(212) 769-5100",
+    "url": "https://www.amnh.org/",
+    "address1": "Central Park West & 79th St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10024",
+    "the_geom": "POINT(-73.973988 40.781324)",
+    "lat": 40.781324,
+    "lon": -73.973988
+  },
+  {
+    "name": "Museum of Modern Art (MoMA)",
+    "tel": "(212) 708-9400",
+    "url": "https://www.moma.org/",
+    "address1": "11 W 53rd St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10019",
+    "the_geom": "POINT(-73.977622 40.761433)",
+    "lat": 40.761433,
+    "lon": -73.977622
+  }
+]
+
+{
+	"meta" : {
+		"view" : {
+			"id" : "fn6f-htvy",
+			"name" : "MUSEUM",
+			"assetType" : "dataset",
+			"attribution" : "Department of Information Technology & Telecommunications (DoITT)",
+			"averageRating" : 0,
+			"category" : "Recreation",
+			"createdAt" : 1403023071,
+			"description" : "Locations of New York City Museums",
+			"diciBackend" : false,
+			"displayType" : "table",
+			"downloadCount" : 9269,
+			"hideFromCatalog" : false,
+			"hideFromDataJson" : false,
+			"indexUpdatedAt" : 1536599097,
+			"locked" : false,
+			"newBackend" : true,
+			"numberOfComments" : 0,
+			"oid" : 15713270,
+			"provenance" : "official",
+			"publicationAppendEnabled" : false,
+			"publicationGroup" : 6269798,
+			"publicationStage" : "published",
+			"rowsUpdatedAt" : 1403023071,
+			"tableId" : 6269798,
+			"totalTimesRated" : 0,
+			"viewCount" : 2038,
+			"viewLastModified" : 1708388058,
+			"viewType" : "tabular",
+			"approvals" : [ {
+				"reviewedAt" : 1407164259,
+				"reviewedAutomatically" : true,
+				"state" : "approved",
+				"submissionId" : 6177556,
+				"submissionObject" : "public_audience_request",
+				"submissionOutcome" : "change_audience",
+				"submittedAt" : 1407164259,
+				"targetAudience" : "public",
+				"workflowId" : 2285,
+				"submissionDetails" : {
+					"permissionType" : "READ"
+				},
+				"submissionOutcomeApplication" : {
+					"failureCount" : 0,
+					"status" : "success"
+				},
+				"submitter" : {
+					"id" : "5fuc-pqz2",
+					"displayName" : "NYC OpenData"
+				}
+			} ],
+			"clientContext" : {
+				"clientContextVariables" : [ ],
+				"inheritedVariables" : { }
+			},
+			"columns" : [ {
+				"id" : -1,
+				"name" : "sid",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":sid",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "id",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":id",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "position",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":position",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "created_at",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":created_at",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "created_meta",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":created_meta",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "updated_at",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":updated_at",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "updated_meta",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":updated_meta",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : -1,
+				"name" : "meta",
+				"dataTypeName" : "meta_data",
+				"fieldName" : ":meta",
+				"position" : 0,
+				"renderTypeName" : "meta_data",
+				"format" : { },
+				"flags" : [ "hidden" ]
+			}, {
+				"id" : 234876519,
+				"name" : "the_geom",
+				"dataTypeName" : "point",
+				"fieldName" : "the_geom",
+				"position" : 1,
+				"renderTypeName" : "point",
+				"tableColumnId" : 33441160,
+				"cachedContents" : {
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : {
+							"coordinates" : [ -74.00693426094169, 40.72557180583998 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -74.00290417204171, 40.72245118852784 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.99883836090484, 40.72074946881006 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.99381737049632, 40.738045683847 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.99963036903092, 40.721127449476676 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.99779152534921, 40.74002038014153 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.97985598415269, 40.57526324252061 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.99386877223978, 40.737986764588406 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.93765514503832, 40.76695661305254 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.98967904824913, 40.718687698398995 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.97727391968168, 40.78587092106756 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.80557949995756, 40.87177831678272 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -74.0396848374904, 40.69905626244391 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.94099076053165, 40.814612726277666 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.91975017724828, 40.83102977992849 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.9430684626868, 40.77611345003038 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.9776016138105, 40.76057363859203 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.98461861468387, 40.672993473207185 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.98200725142944, 40.76740607395742 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					}, {
+						"item" : {
+							"coordinates" : [ -73.80376062063522, 40.703042019259755 ],
+							"type" : "Point"
+						},
+						"count" : "1"
+					} ],
+					"count" : "130",
+					"cardinality" : "130"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876521,
+				"name" : "NAME",
+				"dataTypeName" : "text",
+				"fieldName" : "name",
+				"position" : 2,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441162,
+				"cachedContents" : {
+					"largest" : "YIVO Institute for Jewish Research",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "Studio Museum in Harlem",
+						"count" : "1"
+					}, {
+						"item" : "American Sephardi Federation / Sephardic House",
+						"count" : "1"
+					}, {
+						"item" : "School of Visual Arts Museum",
+						"count" : "1"
+					}, {
+						"item" : "Dahesh Museum",
+						"count" : "1"
+					}, {
+						"item" : "National Academy Museum",
+						"count" : "1"
+					}, {
+						"item" : "Jeffrey's Hook lighthouse (Little Red Lighthouse)",
+						"count" : "1"
+					}, {
+						"item" : "Schomburg Center for Research in Black Culture",
+						"count" : "1"
+					}, {
+						"item" : "Alexander Hamilton U.S. Custom House",
+						"count" : "1"
+					}, {
+						"item" : "National September 11 Memorial & Museum at the World Trade Center",
+						"count" : "1"
+					}, {
+						"item" : "Dia at the Hispanic Society",
+						"count" : "1"
+					}, {
+						"item" : "Leo Baeck Institute",
+						"count" : "1"
+					}, {
+						"item" : "Queens Art Museum - Bulova Corporate Center",
+						"count" : "1"
+					}, {
+						"item" : "Museum of Jewish Heritage",
+						"count" : "1"
+					}, {
+						"item" : "New Museum of Contemporary Art",
+						"count" : "1"
+					}, {
+						"item" : "New York City Fire Museum",
+						"count" : "1"
+					}, {
+						"item" : "Whitney Museum of American Art",
+						"count" : "1"
+					}, {
+						"item" : "Old Stone House",
+						"count" : "1"
+					}, {
+						"item" : "Museum Of Chinese In America",
+						"count" : "1"
+					}, {
+						"item" : "Americas Society",
+						"count" : "1"
+					}, {
+						"item" : "American Museum of Natural History",
+						"count" : "1"
+					} ],
+					"smallest" : "Alexander Hamilton U.S. Custom House",
+					"count" : "130",
+					"cardinality" : "130"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876523,
+				"name" : "TEL",
+				"dataTypeName" : "text",
+				"fieldName" : "tel",
+				"position" : 3,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441164,
+				"cachedContents" : {
+					"largest" : "(866) 987-9692",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "(212) 363-3200",
+						"count" : "2"
+					}, {
+						"item" : "(212) 769-5100",
+						"count" : "2"
+					}, {
+						"item" : "(718) 881-8900",
+						"count" : "2"
+					}, {
+						"item" : "(212) 514-3700",
+						"count" : "2"
+					}, {
+						"item" : "(718) 206-0545",
+						"count" : "2"
+					}, {
+						"item" : "",
+						"count" : "2"
+					}, {
+						"item" : "(212) 864-7752",
+						"count" : "1"
+					}, {
+						"item" : "(212) 908-4110",
+						"count" : "1"
+					}, {
+						"item" : "(646) 437-4200",
+						"count" : "1"
+					}, {
+						"item" : "(718) 699-0005",
+						"count" : "1"
+					}, {
+						"item" : "(212) 777-1089",
+						"count" : "1"
+					}, {
+						"item" : "(212) 375-0475",
+						"count" : "1"
+					}, {
+						"item" : "(212) 288-6400",
+						"count" : "1"
+					}, {
+						"item" : "(212) 294-8301",
+						"count" : "1"
+					}, {
+						"item" : "(212) 219-2166",
+						"count" : "1"
+					}, {
+						"item" : "(212) 849-8400",
+						"count" : "1"
+					}, {
+						"item" : "(718) 784-7700",
+						"count" : "1"
+					}, {
+						"item" : "(212) 246-6860",
+						"count" : "1"
+					}, {
+						"item" : "(212) 369-4880",
+						"count" : "1"
+					}, {
+						"item" : "(212) 873-3400",
+						"count" : "1"
+					} ],
+					"smallest" : "",
+					"count" : "130",
+					"cardinality" : "124"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876524,
+				"name" : "URL",
+				"dataTypeName" : "text",
+				"fieldName" : "url",
+				"position" : 4,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441165,
+				"cachedContents" : {
+					"largest" : "http://www.yumuseum.org/",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "http://www.ellisisland.org/",
+						"count" : "2"
+					}, {
+						"item" : "http://www.asiasociety.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://cmany.org/intro.php?pn=home",
+						"count" : "1"
+					}, {
+						"item" : "http://www.lavitrina.com/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.wyckoffassociation.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.tibetanmuseum.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.lbi.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.nycpolicemuseum.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.studiomuseum.org",
+						"count" : "1"
+					}, {
+						"item" : "http://www.vancortlandthouse.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://as.americas-society.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.chelseaartmuseum.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.nmai.si.edu/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.africanart.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.mcny.org",
+						"count" : "1"
+					}, {
+						"item" : "http://www.mocada.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.southstreetseaportmuseum.org/",
+						"count" : "1"
+					}, {
+						"item" : "http://www.noblemaritime.org/",
+						"count" : "1"
+					}, {
+						"item" : "https://nationalacademy.org/index.asp",
+						"count" : "1"
+					}, {
+						"item" : "http://www.movingimage.us/site/site.php",
+						"count" : "1"
+					} ],
+					"smallest" : "http://as.americas-society.org/",
+					"count" : "130",
+					"cardinality" : "129"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876526,
+				"name" : "ADRESS1",
+				"dataTypeName" : "text",
+				"fieldName" : "adress1",
+				"position" : 5,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441167,
+				"cachedContents" : {
+					"largest" : "West 249th Street & Independence Avenue",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "15 W. 16th St.",
+						"count" : "6"
+					}, {
+						"item" : "613 West 155th Street",
+						"count" : "2"
+					}, {
+						"item" : "Ellis Island",
+						"count" : "2"
+					}, {
+						"item" : "1538 Woodrow Road",
+						"count" : "1"
+					}, {
+						"item" : "1133 Avenue Of The Americas",
+						"count" : "1"
+					}, {
+						"item" : "1 E. 70th Street",
+						"count" : "1"
+					}, {
+						"item" : "32-37 Vernon Boulevard",
+						"count" : "1"
+					}, {
+						"item" : "215 Centre Street",
+						"count" : "1"
+					}, {
+						"item" : "200 Eastern Parkway",
+						"count" : "1"
+					}, {
+						"item" : "2 East 91st Street",
+						"count" : "1"
+					}, {
+						"item" : "230 Sheridan Loop",
+						"count" : "1"
+					}, {
+						"item" : "45 West 53rd Street",
+						"count" : "1"
+					}, {
+						"item" : "35 Avenue at 36 Street",
+						"count" : "1"
+					}, {
+						"item" : "29 East Fourth Street",
+						"count" : "1"
+					}, {
+						"item" : "Boerum Pl. & Schermenhorn Street",
+						"count" : "1"
+					}, {
+						"item" : "Prospect Park Willink Entrance",
+						"count" : "1"
+					}, {
+						"item" : "1000 Richmond Terrace",
+						"count" : "1"
+					}, {
+						"item" : "1 Hudson Square",
+						"count" : "1"
+					}, {
+						"item" : "1230 Fifth Ave",
+						"count" : "1"
+					}, {
+						"item" : "1083 5th Avenue",
+						"count" : "1"
+					} ],
+					"smallest" : "1000 Fifth Avenue",
+					"count" : "130",
+					"cardinality" : "123"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876528,
+				"name" : "ADDRESS2",
+				"dataTypeName" : "text",
+				"fieldName" : "address2",
+				"position" : 6,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441169,
+				"cachedContents" : {
+					"largest" : "Suite 401",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "",
+						"count" : "115"
+					}, {
+						"item" : "5th Floor",
+						"count" : "1"
+					}, {
+						"item" : "Broadway at West 246th Street",
+						"count" : "1"
+					}, {
+						"item" : "20th Floor",
+						"count" : "1"
+					}, {
+						"item" : "Suite 401",
+						"count" : "1"
+					}, {
+						"item" : "Carl Schurz Park",
+						"count" : "1"
+					}, {
+						"item" : "Sony Plaza",
+						"count" : "1"
+					}, {
+						"item" : "Flatbush and Ocean Avenues and Empire Boulevard",
+						"count" : "1"
+					}, {
+						"item" : "75 Varick Street 2nd Floor",
+						"count" : "1"
+					}, {
+						"item" : "Suite 2D",
+						"count" : "1"
+					}, {
+						"item" : "Flushing Meadows Corona Park",
+						"count" : "1"
+					}, {
+						"item" : "Suite 301",
+						"count" : "1"
+					}, {
+						"item" : "Pelham Bay Park",
+						"count" : "1"
+					}, {
+						"item" : "3rd Floor",
+						"count" : "1"
+					}, {
+						"item" : "Fiorello H. LaGuardia Community College/CUNY Room E-238",
+						"count" : "1"
+					}, {
+						"item" : "11th Floor",
+						"count" : "1"
+					} ],
+					"smallest" : "",
+					"count" : "130",
+					"cardinality" : "16"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876530,
+				"name" : "CITY",
+				"dataTypeName" : "text",
+				"fieldName" : "city",
+				"position" : 7,
+				"renderTypeName" : "text",
+				"tableColumnId" : 33441171,
+				"cachedContents" : {
+					"largest" : "Staten Island",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "New York",
+						"count" : "89"
+					}, {
+						"item" : "Brooklyn",
+						"count" : "12"
+					}, {
+						"item" : "Queens",
+						"count" : "10"
+					}, {
+						"item" : "Staten Island",
+						"count" : "9"
+					}, {
+						"item" : "Bronx",
+						"count" : "8"
+					}, {
+						"item" : "Long Island City",
+						"count" : "1"
+					}, {
+						"item" : "Jackson Heights",
+						"count" : "1"
+					} ],
+					"smallest" : "Bronx",
+					"count" : "130",
+					"cardinality" : "7"
+				},
+				"format" : { }
+			}, {
+				"id" : 234876532,
+				"name" : "ZIP",
+				"dataTypeName" : "number",
+				"fieldName" : "zip",
+				"position" : 8,
+				"renderTypeName" : "number",
+				"tableColumnId" : 33441173,
+				"cachedContents" : {
+					"largest" : "11432.0",
+					"non_null" : "130",
+					"null" : "0",
+					"top" : [ {
+						"item" : "10011.0",
+						"count" : "9"
+					}, {
+						"item" : "10021.0",
+						"count" : "6"
+					}, {
+						"item" : "10032.0",
+						"count" : "5"
+					}, {
+						"item" : "10013.0",
+						"count" : "5"
+					}, {
+						"item" : "10128.0",
+						"count" : "5"
+					}, {
+						"item" : "0.0",
+						"count" : "5"
+					}, {
+						"item" : "10012.0",
+						"count" : "5"
+					}, {
+						"item" : "10019.0",
+						"count" : "4"
+					}, {
+						"item" : "10024.0",
+						"count" : "4"
+					}, {
+						"item" : "10301.0",
+						"count" : "4"
+					}, {
+						"item" : "11101.0",
+						"count" : "3"
+					}, {
+						"item" : "10002.0",
+						"count" : "3"
+					}, {
+						"item" : "10022.0",
+						"count" : "3"
+					}, {
+						"item" : "10001.0",
+						"count" : "3"
+					}, {
+						"item" : "10028.0",
+						"count" : "3"
+					}, {
+						"item" : "10036.0",
+						"count" : "3"
+					}, {
+						"item" : "10016.0",
+						"count" : "3"
+					}, {
+						"item" : "10003.0",
+						"count" : "3"
+					}, {
+						"item" : "10004.0",
+						"count" : "3"
+					}, {
+						"item" : "10467.0",
+						"count" : "2"
+					} ],
+					"smallest" : "0.0",
+					"count" : "130",
+					"cardinality" : "59"
+				},
+				"format" : { }
+			} ],
+			"grants" : [ {
+				"inherited" : false,
+				"type" : "viewer",
+				"flags" : [ "public" ]
+			} ],
+			"metadata" : {
+				"attachments" : [ {
+					"filename" : "MUSEUM.zip",
+					"assetId" : "9b4cae2d-fea9-4270-92ac-56ee58bc2886",
+					"name" : "MUSEUM.zip"
+				} ],
+				"custom_fields" : {
+					"Update" : {
+						"Automation" : "No",
+						"Date Made Public" : "8/4/2014",
+						"Update Frequency" : "As needed"
+					},
+					"Dataset Information" : {
+						"Agency" : "Office of Technology and Innovation (OTI)"
+					}
+				},
+				"availableDisplayTypes" : [ "table", "fatrow", "page" ]
+			},
+			"owner" : {
+				"id" : "5fuc-pqz2",
+				"displayName" : "NYC OpenData",
+				"profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+				"profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+				"profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+				"screenName" : "NYC OpenData",
+				"type" : "interactive",
+				"flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+			},
+			"query" : { },
+			"rights" : [ "read" ],
+			"tableAuthor" : {
+				"id" : "5fuc-pqz2",
+				"displayName" : "NYC OpenData",
+				"profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+				"profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+				"profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+				"screenName" : "NYC OpenData",
+				"type" : "interactive",
+				"flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+			},
+			"tags" : [ "museums", "art", "culture", "museo", "doittgis", "doitt gis" ],
+			"flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+		}
+	},
+	"data" : [ [ "row-7jyv~2dj7.6utz", "00000000-0000-0000-4AE4-2FBF98C98CB8", 0, 1450753171, null, 1450753171, null, "{ }", "POINT (-74.01375579519738 40.703816216918035)", "Alexander Hamilton U.S. Custom House", "(212) 514-3700", "http://www.oldnycustomhouse.gov/", "1 Bowling Grn", "", "New York", "10004.0" ]
+, [ "row-zx2y.mhy3-dqnb", "00000000-0000-0000-A0BE-BCEE8C7B69B9", 0, 1450753171, null, 1450753171, null, "{ }", "POINT (-74.06303178855111 40.615120837755356)", "Alice Austen House Museum", "(718) 816-4506", "http://www.aliceausten.org/", "2 Hylan Blvd", "", "Staten Island", "10305.0" ]
