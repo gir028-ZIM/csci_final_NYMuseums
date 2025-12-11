@@ -6,21 +6,23 @@ interface Museum {
   name: string;
   tel: string;
   url: string;
-  adress1: string;
+  address1: string;
   address2: string;
   city: string;
   zip: string;
 }
 
-const museumList: Museum[] = museums.data.map((row: any) => ({
-  the_geom: row[8],
-  name: row[9],
-  tel: row[10],
-  url: row[11],
-  adress1: row[12],
-  address2: row[13],
-  city: row[14],
-  zip: row[15],
+const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
+
+const museumList: Museum[] = rows.map((row: any) => ({
+  the_geom: row.the_geom ?? row[8],
+  name: row.name ?? row[9],
+  tel: row.tel ?? row[10],
+  url: row.url ?? row[11],
+  address1: row.address1 ?? row[12] ?? row.adress1 ?? '',
+  address2: row.address2 ?? row[13] ?? '',
+  city: row.city ?? row[14] ?? '',
+  zip: row.zip ?? row[15] ?? ''
 }));
 ---
 
@@ -201,7 +203,7 @@ const museumList: Museum[] = museums.data.map((row: any) => ({
           <div class="museum-card">
             <h3>{museum.name}</h3>
             <div class="location">📍 {museum.city}, NY {museum.zip}</div>
-            <div class="address">{museum.adress1}{museum.address2 ? `, ${museum.address2}` : ''}</div>
+            <div class="address">{museum.address1}{museum.address2 ? `, ${museum.address2}` : ''}</div>
             <div class="contact">
               {museum.tel && <span>📞 {museum.tel}</span>}
               {museum.url && <a href={museum.url} target="_blank">🌐 Visit Website</a>}

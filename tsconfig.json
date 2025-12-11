@@ -5,14 +5,3 @@
     "resolveJsonModule": true
   }
 }
-{
-  "extends": "astro/tsconfigs/strict"
-}
-
-{
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true
-  }
-}
