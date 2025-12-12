@@ -1,4 +1,5 @@
 ---
+import Layout from '../layouts/Layout.astro';
 import museums from '../data/museums_clean.json';
 
 interface Museum {
@@ -13,7 +14,7 @@ interface Museum {
 }
 
 // Support both cleaned-array and original OpenData payloads
-const rows = Array.isArray(museums) ? museums : (museums.data || []);
+const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
 
 const museumList: Museum[] = rows.map((row: any) => ({
   the_geom: row.the_geom ?? row[8],
@@ -29,48 +30,169 @@ const museumList: Museum[] = rows.map((row: any) => ({
 const locations = [...new Set(museumList.map(m => m.city))].sort();
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Locations - NYC Museums Directory</title>
-  </head>
-  <body>
-    <header>
-      <h1>🗺️ Locations</h1>
-      <p>Browse museums by NYC location</p>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/locations/">All Locations</a></li>
-      </ul>
-    </nav>
-    
-    <main class="container">
-      <section class="page-title">
-        <h1>All Locations</h1>
-        <p>Click on a location to see all museums</p>
-      </section>
-      
-      <div class="locations-grid">
-        {locations.map(city => {
-          const count = museumList.filter(m => m.city === city).length;
-          const slug = city.toLowerCase().replace(/\s+/g, '-');
-          return (
-            <a href={`/locations/${slug}/`} class="location-card">
-              <h2>{city}</h2>
-              <div class="count">{count} Museums</div>
-            </a>
-          );
-        })}
-      </div>
-    </main>
-    
-    <footer>
-      <p>&copy; 2025 NYC Museums Directory | Data from NYC OpenData</p>
-    </footer>
-  </body>
-</html>
+<Layout title="Locations - NYC Museums Directory">
+  <header>
+    <h1>🗺️ Locations</h1>
+    <p>Browse museums by NYC location</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/locations/">All Locations</a></li>
+    </ul>
+  </nav>
+  
+  <section class="page-title">
+    <h1>All Locations</h1>
+    <p>Click on a location to see all museums</p>
+  </section>
+  
+  <div class="locations-grid">
+    {locations.map(city => {
+      const count = museumList.filter(m => m.city === city).length;
+      const slug = city.toLowerCase().replace(/\s+/g, '-');
+      return (
+        <a href={`/locations/${slug}/`} class="location-card">
+          <h2>{city}</h2>
+          <div class="count">{count} Museums</div>
+        </a>
+      );
+    })}
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 NYC Museums Directory | Data from NYC OpenData</p>
+  </footer>
+</Layout>
+
+<style>
+  header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: -20px -20px 2rem -20px;
+    padding-left: calc(1rem + 20px);
+    padding-right: calc(1rem + 20px);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  nav {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #764ba2;
+  }
+  
+  .page-title {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .page-title h1 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-title p {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .locations-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .location-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid transparent;
+  }
+  
+  .location-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border-color: #667eea;
+  }
+  
+  .location-card h2 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .location-card .count {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .locations-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .locations-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .locations-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 3rem -20px -20px -20px;
+  }
+</style>
 
