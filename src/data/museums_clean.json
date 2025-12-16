@@ -34,5 +34,126 @@
     "the_geom": "POINT(-73.977622 40.761433)",
     "lat": 40.761433,
     "lon": -73.977622
+  },
+  {
+    "name": "Guggenheim Museum",
+    "tel": "(212) 423-3500",
+    "url": "https://www.guggenheim.org/",
+    "address1": "1071 5th Ave",
+    "address2": "",
+    "city": "New York",
+    "zip": "10128",
+    "the_geom": "POINT(-73.959007 40.783017)",
+    "lat": 40.783017,
+    "lon": -73.959007
+  },
+  {
+    "name": "Whitney Museum of American Art",
+    "tel": "(212) 570-3600",
+    "url": "https://whitney.org/",
+    "address1": "99 Gansevoort St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10014",
+    "the_geom": "POINT(-74.008864 40.739587)",
+    "lat": 40.739587,
+    "lon": -74.008864
+  },
+  {
+    "name": "Museum of Jewish Heritage",
+    "tel": "(646) 437-4202",
+    "url": "https://mjhnyc.org/",
+    "address1": "36 Battery Pl",
+    "address2": "",
+    "city": "New York",
+    "zip": "10280",
+    "the_geom": "POINT(-74.01875 40.70621,)",
+    "lat": 40.70621,
+    "lon": -74.01875
+  },
+  {
+    "name": "Childrens Museum of Manhattan",
+    "tel": "(212) 721-1223",
+    "url": "https://cmom.org/",
+    "address1": "212 W 83rd St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10024",
+    "the_geom": "POINT(-73.9169 40.6472)",
+    "lat": 40.6472,
+    "lon": -73.9169
+  }, {
+    "name": "New Museum",
+    "tel": "(212) 219-1222",
+    "url": "https://www.newmuseum.org/",
+    "address1": "235 Bowery",
+    "address2": "",
+    "city": "New York",
+    "zip": "10002",
+    "the_geom": "POINT(-73.9928 40.7223)",
+    "lat": 40.7223,
+    "lon": -73.9928
+  },
+  {
+    "name": "Brooklyn Museum",
+    "tel": "(718) 638-5000",
+    "url": "https://www.brooklynmuseum.org/",
+    "address1": "200 Eastern Pkwy",
+    "address2": "",
+    "city": "Brooklyn",
+    "zip": "11238",
+    "the_geom": "POINT(-73.9632 40.6712)",
+    "lat": 40.6712,
+    "lon": -73.9632
+  },
+  {
+    "name": "The Frick Collection",
+    "tel": "(212) 288-0700",
+    "url": "https://www.frick.org/",
+    "address1": "1 E 70th St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10021",
+    "the_geom": "POINT(-73.9675 40.7712)",
+    "lat": 40.7712,
+    "lon": -73.9675
+  },
+  {
+    "name": "Intrepid Sea, Air & Space Museum",
+    "tel": "(212) 245-0072",
+    "url": "https://www.intrepidmuseum.org/",
+    "address1": "Pier 86, W 46th St",
+    "address2": "",
+    "city": "New York",
+    "zip": "10036",
+    "the_geom": "POINT(-74.0094 40.7645)",
+    "lat": 40.7645,
+    "lon": -74.0094
+  },
+  {
+    "name": "The Morgan Library & Museum",
+    "tel": "(212) 685-0008",
+    "url": "https://www.themorgan.org/",
+    "address1": "225 Madison Ave",
+    "address2": "",
+    "city": "New York",
+    "zip": "10016",
+    "the_geom": "POINT(-73.9787 40.7492)",
+    "lat": 40.7492,
+    "lon": -73.9787
+  },
+  {
+    "name": "New-York Historical Society",
+    "tel": "(212) 873-3400",
+    "url": "https://www.nyhistory.org/",
+    "address1": "170 Central Park West",
+    "address2": "",
+    "city": "New York",
+    "zip": "10024",
+    "the_geom": "POINT(-73.9742 40.7794)",
+    "lat": 40.7794,
+    "lon": -73.9742
   }
+
+
 ]
