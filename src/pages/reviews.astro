@@ -1,9 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import ReviewCard from '../components/ReviewCard.astro';
 import museums from '../data/museums_clean.json';
 
 interface Museum {
-  the_geom: string;
   name: string;
   tel: string;
   url: string;
@@ -11,55 +11,56 @@ interface Museum {
   address2: string;
   city: string;
   zip: string;
+  review?: string;
 }
 
-// Support both cleaned-array and original OpenData payloads
+// Parse museum data
 const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
 
 const museumList: Museum[] = rows.map((row: any) => ({
-  the_geom: row.the_geom ?? row[8],
   name: row.name ?? row[9],
   tel: row.tel ?? row[10],
   url: row.url ?? row[11],
   address1: row.address1 ?? row[12] ?? row.adress1 ?? '',
   address2: row.address2 ?? row[13] ?? '',
   city: row.city ?? row[14] ?? '',
-  zip: row.zip ?? row[15] ?? ''
+  zip: row.zip ?? row[15] ?? '',
+  review: row.review ?? ''
 }));
 
-const locations = [...new Set(museumList.map(m => m.city))].sort();
+// Filter only museums with reviews
+const reviewedMuseums = museumList.filter(m => m.review && m.review.trim().length > 0);
 ---
 
-<Layout title="Locations - NYC Museums Directory">
+<Layout title="Museum Reviews - NYC Museums Directory">
   <header>
-    <h1>🗺️ Locations</h1>
-    <p>Browse museums by NYC location</p>
+    <h1>⭐ Museum Reviews</h1>
+    <p>My personal take on NYC's finest museums</p>
   </header>
   
   <nav>
     <ul>
       <li><a href="/">Home</a></li>
-      <li><a href="/locations/">All Locations</a></li>
+      <li><a href="/locations/">By Location</a></li>
       <li><a href="/reviews/">Reviews</a></li>
     </ul>
   </nav>
   
   <section class="page-title">
-    <h1>All Locations</h1>
-    <p>Click on a location to see all museums</p>
+    <h1>Museum Reviews</h1>
+    <p>Read my personal reviews of {reviewedMuseums.length} museums</p>
   </section>
   
-  <div class="locations-grid">
-    {locations.map(city => {
-      const count = museumList.filter(m => m.city === city).length;
-      const slug = city.toLowerCase().replace(/\s+/g, '-');
-      return (
-        <a href={`/locations/${slug}/`} class="location-card">
-          <h2>{city}</h2>
-          <div class="count">{count} Museums</div>
-        </a>
-      );
-    })}
+  <div class="reviews-grid">
+    {reviewedMuseums.map((museum) => (
+      <ReviewCard 
+        name={museum.name}
+        review={museum.review || ''}
+        city={museum.city}
+        zip={museum.zip}
+        url={museum.url}
+      />
+    ))}
   </div>
   
   <footer>
@@ -135,55 +136,27 @@ const locations = [...new Set(museumList.map(m => m.city))].sort();
     font-size: 1.1rem;
   }
   
-  .locations-grid {
+  .reviews-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
   }
   
-  .location-card {
-    background: white;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-decoration: none;
-    color: inherit;
-    border: 2px solid transparent;
-  }
-  
-  .location-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    border-color: #667eea;
-  }
-  
-  .location-card h2 {
-    color: #667eea;
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  
-  .location-card .count {
-    color: #666;
-    font-size: 0.95rem;
-  }
-  
   @media (max-width: 1200px) {
-    .locations-grid {
+    .reviews-grid {
       grid-template-columns: repeat(3, 1fr);
     }
   }
   
   @media (max-width: 768px) {
-    .locations-grid {
+    .reviews-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 480px) {
-    .locations-grid {
+    .reviews-grid {
       grid-template-columns: 1fr;
     }
   }
@@ -196,4 +169,3 @@ const locations = [...new Set(museumList.map(m => m.city))].sort();
     margin: 3rem -20px -20px -20px;
   }
 </style>
-

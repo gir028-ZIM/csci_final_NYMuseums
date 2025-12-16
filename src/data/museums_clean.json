@@ -9,7 +9,8 @@
     "zip": "10028",
     "the_geom": "POINT(-73.963244 40.779437)",
     "lat": 40.779437,
-    "lon": -73.963244
+    "lon": -73.963244,
+    "review": "An iconic institution with world-class art collections spanning millennia. The Egyptian wing is particularly impressive."
   },
   {
     "name": "American Museum of Natural History",
@@ -21,7 +22,8 @@
     "zip": "10024",
     "the_geom": "POINT(-73.973988 40.781324)",
     "lat": 40.781324,
-    "lon": -73.973988
+    "lon": -73.973988,
+    "review": "A must-visit for dinosaur enthusiasts and science lovers. The Hall of Fossils and the Rose Center are breathtaking."
   },
   {
     "name": "Museum of Modern Art (MoMA)",
@@ -33,7 +35,8 @@
     "zip": "10019",
     "the_geom": "POINT(-73.977622 40.761433)",
     "lat": 40.761433,
-    "lon": -73.977622
+    "lon": -73.977622,
+    "review": "Exceptional contemporary art collection. The renovation modernized the spaces beautifully. Don't miss the photography section."
   },
   {
     "name": "Guggenheim Museum",
@@ -45,7 +48,8 @@
     "zip": "10128",
     "the_geom": "POINT(-73.959007 40.783017)",
     "lat": 40.783017,
-    "lon": -73.959007
+    "lon": -73.959007,
+    "review": "The spiral architecture is as much an art piece as the collections inside. Stunning rotunda and diverse contemporary works."
   },
   {
     "name": "Whitney Museum of American Art",
@@ -57,7 +61,8 @@
     "zip": "10014",
     "the_geom": "POINT(-74.008864 40.739587)",
     "lat": 40.739587,
-    "lon": -74.008864
+    "lon": -74.008864,
+    "review": "Cutting-edge American art in a beautiful waterfront location. The outdoor terrace offers great views of the High Line."
   },
   {
     "name": "Museum of Jewish Heritage",
@@ -69,7 +74,8 @@
     "zip": "10280",
     "the_geom": "POINT(-74.01875 40.70621,)",
     "lat": 40.70621,
-    "lon": -74.01875
+    "lon": -74.01875,
+    "review": "A poignant and educational experience with powerful exhibits. The location at Battery Park with views of the Statue of Liberty adds to the impact."
   },
   {
     "name": "Childrens Museum of Manhattan",
@@ -81,7 +87,8 @@
     "zip": "10024",
     "the_geom": "POINT(-73.9169 40.6472)",
     "lat": 40.6472,
-    "lon": -73.9169
+    "lon": -73.9169,
+    "review": "Perfect for young children with hands-on, interactive exhibits. Great way to inspire curiosity and creativity in kids."
   }, {
     "name": "New Museum",
     "tel": "(212) 219-1222",
@@ -92,7 +99,8 @@
     "zip": "10002",
     "the_geom": "POINT(-73.9928 40.7223)",
     "lat": 40.7223,
-    "lon": -73.9928
+    "lon": -73.9928,
+    "review": "Innovative contemporary art space in NoLita. Always pushing boundaries with experimental and cutting-edge installations."
   },
   {
     "name": "Brooklyn Museum",
@@ -104,7 +112,8 @@
     "zip": "11238",
     "the_geom": "POINT(-73.9632 40.6712)",
     "lat": 40.6712,
-    "lon": -73.9632
+    "lon": -73.9632,
+    "review": "Impressive collection of world art and American works. The Egyptian collection is outstanding and the building itself is architecturally beautiful."
   },
   {
     "name": "The Frick Collection",
@@ -116,7 +125,8 @@
     "zip": "10021",
     "the_geom": "POINT(-73.9675 40.7712)",
     "lat": 40.7712,
-    "lon": -73.9675
+    "lon": -73.9675,
+    "review": "A gem among NYC museums! Intimate collection of masterpieces with an elegant mansion setting. Less crowded than the Met."
   },
   {
     "name": "Intrepid Sea, Air & Space Museum",
@@ -128,7 +138,8 @@
     "zip": "10036",
     "the_geom": "POINT(-74.0094 40.7645)",
     "lat": 40.7645,
-    "lon": -74.0094
+    "lon": -74.0094,
+    "review": "Fascinating museum housed on an actual aircraft carrier. Great for those interested in military history, aviation, and space exploration."
   },
   {
     "name": "The Morgan Library & Museum",
@@ -140,7 +151,8 @@
     "zip": "10016",
     "the_geom": "POINT(-73.9787 40.7492)",
     "lat": 40.7492,
-    "lon": -73.9787
+    "lon": -73.9787,
+    "review": "An exceptional collection of rare books, manuscripts, and art. The library itself is a masterpiece with a magical reading room."
   },
   {
     "name": "New-York Historical Society",
@@ -152,7 +164,8 @@
     "zip": "10024",
     "the_geom": "POINT(-73.9742 40.7794)",
     "lat": 40.7794,
-    "lon": -73.9742
+    "lon": -73.9742,
+    "review": "Perfect for understanding NYC's rich history from colonial times to present. Great exhibits and knowledgeable staff."
   }
 
 
