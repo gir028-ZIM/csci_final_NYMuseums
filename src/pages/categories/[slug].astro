@@ -1,0 +1,263 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import MuseumCard from '../../components/MuseumCard.astro';
+import museums from '../../data/museums_clean.json';
+
+interface Museum {
+  the_geom: string;
+  name: string;
+  tel: string;
+  url: string;
+  address1: string;
+  address2: string;
+  city: string;
+  zip: string;
+  category: string;
+  review: string;
+}
+
+// Generate static paths for each category
+export function getStaticPaths() {
+  const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
+  
+  const museumList: Museum[] = rows.map((row: any) => ({
+    the_geom: row.the_geom ?? row[8],
+    name: row.name ?? row[9],
+    tel: row.tel ?? row[10],
+    url: row.url ?? row[11],
+    address1: row.address1 ?? row[12] ?? row.adress1 ?? '',
+    address2: row.address2 ?? row[13] ?? '',
+    city: row.city ?? row[14] ?? '',
+    zip: row.zip ?? row[15] ?? '',
+    category: row.category ?? '',
+    review: row.review ?? ''
+  }));
+
+  const categories = [...new Set(museumList.map(m => m.category))].sort();
+  
+  return categories.map((category: string) => ({
+    params: { slug: category.toLowerCase().replace(/\s+/g, '-') },
+    props: { category }
+  }));
+}
+
+// Parse museum data for the page
+const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
+
+const museumList: Museum[] = rows.map((row: any) => ({
+  the_geom: row.the_geom ?? row[8],
+  name: row.name ?? row[9],
+  tel: row.tel ?? row[10],
+  url: row.url ?? row[11],
+  address1: row.address1 ?? row[12] ?? row.adress1 ?? '',
+  address2: row.address2 ?? row[13] ?? '',
+  city: row.city ?? row[14] ?? '',
+  zip: row.zip ?? row[15] ?? '',
+  category: row.category ?? '',
+  review: row.review ?? ''
+}));
+
+// Extract unique categories
+const categories: string[] = [...new Set(museumList.map(m => m.category))].sort();
+
+interface Props {
+  category: string;
+}
+
+const { category } = Astro.props;
+
+// Filter museums by category
+const categoryMuseums = museumList.filter(m => m.category === category);
+
+const icons = {
+  'Art': '🎨',
+  'History': '📚',
+  'Science': '🔬'
+};
+const icon = icons[category as keyof typeof icons] || '🏛️';
+---
+
+<Layout title={`${category} Museums - NYC Museums Directory`}>
+  <header>
+    <h1>{icon} {category}</h1>
+    <p>Museums and Cultural Institutions</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/categories/">All Categories</a></li>
+    </ul>
+  </nav>
+  
+  <section class="category-title">
+    <h1>{category}</h1>
+    <p>Discover {categoryMuseums.length} {category.toLowerCase()} museums in NYC</p>
+  </section>
+  
+  <section class="category-links">
+    <h3>Other Categories</h3>
+    <ul>
+      {categories.map(cat => (
+        <li>
+          <a href={`/categories/${cat.toLowerCase().replace(/\s+/g, '-')}/`}>
+            {cat} ({museumList.filter(m => m.category === cat).length})
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+  
+  <div class="museums-grid">
+    {categoryMuseums.map((museum) => (
+      <MuseumCard 
+        name={museum.name}
+        address1={museum.address1}
+        city={museum.city}
+        zip={museum.zip}
+        tel={museum.tel}
+        url={museum.url}
+      />
+    ))}
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 NYC Museums Directory | Data from NYC OpenData</p>
+  </footer>
+</Layout>
+
+<style>
+  header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin: -20px -20px 2rem -20px;
+    padding-left: calc(1rem + 20px);
+    padding-right: calc(1rem + 20px);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  nav {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #764ba2;
+  }
+  
+  .category-title {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .category-title h1 {
+    color: #667eea;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .category-title p {
+    color: #666;
+    font-size: 1.1rem;
+  }
+  
+  .category-links {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .category-links h3 {
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .category-links ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .category-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f0f0f0;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .category-links a:hover {
+    background-color: #667eea;
+    color: white;
+  }
+  
+  .museums-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .museums-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .museums-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .museums-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin: 3rem -20px -20px -20px;
+  }
+</style>
