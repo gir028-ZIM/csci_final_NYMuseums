@@ -12,6 +12,7 @@ interface Museum {
   address2: string;
   city: string;
   zip: string;
+  image?: string;
 }
 
 const rows = Array.isArray(museums as any) ? (museums as any) : ((museums as any).data || []);
@@ -24,7 +25,8 @@ const museumList: Museum[] = rows.map((row: any) => ({
   address1: row.address1 ?? row[12] ?? row.adress1 ?? '',
   address2: row.address2 ?? row[13] ?? '',
   city: row.city ?? row[14] ?? '',
-  zip: row.zip ?? row[15] ?? ''
+  zip: row.zip ?? row[15] ?? '',
+  image: row.image ?? ''
 }));
 ---
 
@@ -59,6 +61,7 @@ const museumList: Museum[] = rows.map((row: any) => ({
         zip={museum.zip}
         tel={museum.tel}
         url={museum.url}
+        image={museum.image}
       />
     ))}
   </div>

@@ -1,6 +1,7 @@
 [
   {
     "name": "Metropolitan Museum of Art",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Metropolitan_Museum_of_Art_exterior_NYC.jpg/800px-Metropolitan_Museum_of_Art_exterior_NYC.jpg",
     "tel": "(212) 535-7710",
     "url": "https://www.metmuseum.org/",
     "address1": "1000 5th Ave",
@@ -15,6 +16,7 @@
   },
   {
     "name": "American Museum of Natural History",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/American_Museum_of_Natural_History_7.jpg/800px-American_Museum_of_Natural_History_7.jpg",
     "tel": "(212) 769-5100",
     "url": "https://www.amnh.org/",
     "address1": "Central Park West & 79th St",
@@ -29,6 +31,7 @@
   },
   {
     "name": "Museum of Modern Art (MoMA)",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/MoMA_NYC_2019.jpg/800px-MoMA_NYC_2019.jpg",
     "tel": "(212) 708-9400",
     "url": "https://www.moma.org/",
     "address1": "11 W 53rd St",
@@ -42,6 +45,7 @@
     "review": "Exceptional contemporary art collection. The renovation modernized the spaces beautifully. Don't miss the photography section."
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Guggenheim_NYC_aerial_photo.jpg/800px-Guggenheim_NYC_aerial_photo.jpg",
     "name": "Guggenheim Museum",
     "tel": "(212) 423-3500",
     "url": "https://www.guggenheim.org/",
@@ -56,6 +60,7 @@
     "review": "The spiral architecture is as much an art piece as the collections inside. Did you know Beyonce had advertised her album Cowboy Carter on the facade, even though she never go permission to do so?"
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Whitney_Museum_of_American_Art_by_David_Shankbone.jpg/800px-Whitney_Museum_of_American_Art_by_David_Shankbone.jpg",
     "name": "Whitney Museum of American Art",
     "tel": "(212) 570-3600",
     "url": "https://whitney.org/",
@@ -70,6 +75,7 @@
     "review": "I personally liked the Whitney more than the MOMA. Cutting-edge American art in a beautiful waterfront location. The outdoor terrace offers great views!"
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Museum_of_Jewish_Heritage_building.jpg/800px-Museum_of_Jewish_Heritage_building.jpg",
     "name": "Museum of Jewish Heritage",
     "tel": "(646) 437-4202",
     "url": "https://mjhnyc.org/",
@@ -84,6 +90,7 @@
     "review": "A poignant and educational experience with powerful exhibits. You have to be strong and ready for some difficult material in this museum. But some exhibits have warnings, or other specific sheidling to help visitors who may be sensitive to certain topics. I enjoyed learning more about living holocoust survivors and their stories."
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Museum_of_Natural_History_entrance.jpg/800px-American_Museum_of_Natural_History_entrance.jpg",
     "name": "Childrens Museum of Manhattan",
     "tel": "(212) 721-1223",
     "url": "https://cmom.org/",
@@ -98,6 +105,7 @@
     "review": "Hey! I used to work at a childrens museum, and I can tell you that adults find them fun too! Perfect for young children with hands-on, interactive exhibits. Great way to inspire curiosity and creativity in kids and their families."
   }, {
     "name": "New Museum",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/New_Museum_NYC_by_David_Shankbone.jpg/800px-New_Museum_NYC_by_David_Shankbone.jpg",
     "tel": "(212) 219-1222",
     "url": "https://www.newmuseum.org/",
     "address1": "235 Bowery",
@@ -112,6 +120,7 @@
   },
   {
     "name": "Brooklyn Museum",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Brooklyn_Museum_by_David_Shankbone.jpg/800px-Brooklyn_Museum_by_David_Shankbone.jpg",
     "tel": "(718) 638-5000",
     "url": "https://www.brooklynmuseum.org/",
     "address1": "200 Eastern Pkwy",
@@ -126,6 +135,7 @@
   },
   {
     "name": "The Frick Collection",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Frick_Collection_NYC.jpg/800px-Frick_Collection_NYC.jpg",
     "tel": "(212) 288-0700",
     "url": "https://www.frick.org/",
     "address1": "1 E 70th St",
@@ -140,6 +150,7 @@
   },
   {
     "name": "Intrepid Sea, Air & Space Museum",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Intrepid_Sea_Air_Space_Museum_by_David_Shankbone.jpg/800px-Intrepid_Sea_Air_Space_Museum_by_David_Shankbone.jpg",
     "tel": "(212) 245-0072",
     "url": "https://www.intrepidmuseum.org/",
     "address1": "Pier 86, W 46th St",
@@ -153,6 +164,7 @@
     "review": "I did not get to visit this one during my trip personally, but my friends have many times. A fascinating museum housed on an actual aircraft carrier. Great for those interested in military history, aviation, and space."
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Morgan_Library_NYC.jpg/800px-Morgan_Library_NYC.jpg",
     "name": "The Morgan Library & Museum",
     "tel": "(212) 685-0008",
     "url": "https://www.themorgan.org/",
@@ -167,6 +179,7 @@
     "review": "Literary lovers rejoice! An exceptional collection of rare books, manuscripts, and art. The library itself is a masterpiece with a magical reading room that will transport you into your favorite lord of the rings book."
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/NY_Historical_Society.jpg/800px-NY_Historical_Society.jpg",
     "name": "New-York Historical Society",
     "tel": "(212) 873-3400",
     "url": "https://www.nyhistory.org/",
