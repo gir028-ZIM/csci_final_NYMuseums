@@ -1,7 +1,7 @@
 [
   {
     "name": "Metropolitan Museum of Art",
-    "image": "/images/met-museum.svg",
+    "image": "/images/the_met_nyc.jpeg",
     "tel": "(212) 535-7710",
     "url": "https://www.metmuseum.org/",
     "address1": "1000 5th Ave",
@@ -16,7 +16,7 @@
   },
   {
     "name": "American Museum of Natural History",
-    "image": "/images/amnh.svg",
+    "image": "/images/museum_of_natural_history_nyc.jpeg",
     "tel": "(212) 769-5100",
     "url": "https://www.amnh.org/",
     "address1": "Central Park West & 79th St",
@@ -31,7 +31,7 @@
   },
   {
     "name": "Museum of Modern Art (MoMA)",
-    "image": "/images/moma.svg",
+    "image": "/images/MOMA_nyc.jpeg",
     "tel": "(212) 708-9400",
     "url": "https://www.moma.org/",
     "address1": "11 W 53rd St",
@@ -45,7 +45,7 @@
     "review": "Exceptional contemporary art collection. The renovation modernized the spaces beautifully. Don't miss the photography section."
   },
   {
-    "image": "/images/guggenheim.svg",
+    "image": "/images/Guggenheim_nyc.jpeg",
     "name": "Guggenheim Museum",
     "tel": "(212) 423-3500",
     "url": "https://www.guggenheim.org/",
@@ -60,7 +60,7 @@
     "review": "The spiral architecture is as much an art piece as the collections inside. Did you know Beyonce had advertised her album Cowboy Carter on the facade, even though she never go permission to do so?"
   },
   {
-    "image": "/images/whitney.svg",
+    "image": "/images/whitney_museum_nyc.jpg",
     "name": "Whitney Museum of American Art",
     "tel": "(212) 570-3600",
     "url": "https://whitney.org/",
@@ -75,7 +75,7 @@
     "review": "I personally liked the Whitney more than the MOMA. Cutting-edge American art in a beautiful waterfront location. The outdoor terrace offers great views!"
   },
   {
-    "image": "/images/jewish-heritage.svg",
+    "image": "/images/museum_of_jewish_heritage_nyc.jpeg",
     "name": "Museum of Jewish Heritage",
     "tel": "(646) 437-4202",
     "url": "https://mjhnyc.org/",
@@ -90,7 +90,7 @@
     "review": "A poignant and educational experience with powerful exhibits. You have to be strong and ready for some difficult material in this museum. But some exhibits have warnings, or other specific sheidling to help visitors who may be sensitive to certain topics. I enjoyed learning more about living holocoust survivors and their stories."
   },
   {
-    "image": "/images/cmom.svg",
+    "image": "/images/childrens_museum_of_manhattan-nyc.jpeg",
     "name": "Childrens Museum of Manhattan",
     "tel": "(212) 721-1223",
     "url": "https://cmom.org/",
@@ -120,7 +120,7 @@
   },
   {
     "name": "Brooklyn Museum",
-    "image": "/images/brooklyn-museum.svg",
+    "image": "/images/brooklyn _museum.jpeg",
     "tel": "(718) 638-5000",
     "url": "https://www.brooklynmuseum.org/",
     "address1": "200 Eastern Pkwy",
@@ -135,7 +135,7 @@
   },
   {
     "name": "The Frick Collection",
-    "image": "/images/frick-collection.svg",
+    "image": "/images/frick.jpg",
     "tel": "(212) 288-0700",
     "url": "https://www.frick.org/",
     "address1": "1 E 70th St",
@@ -150,7 +150,7 @@
   },
   {
     "name": "Intrepid Sea, Air & Space Museum",
-    "image": "/images/intrepid.svg",
+    "image": "/images/intrepid_air_and_space_nyc.jpeg",
     "tel": "(212) 245-0072",
     "url": "https://www.intrepidmuseum.org/",
     "address1": "Pier 86, W 46th St",
@@ -164,7 +164,7 @@
     "review": "I did not get to visit this one during my trip personally, but my friends have. A fascinating museum housed on an ACTUAL aircraft carrier. Great for those interested in military history, aviation, and space."
   },
   {
-    "image": "/images/morgan-library.svg",
+    "image": "/images/the_morgan_library_museum_nyc.jpeg",
     "name": "The Morgan Library & Museum",
     "tel": "(212) 685-0008",
     "url": "https://www.themorgan.org/",
@@ -179,7 +179,7 @@
     "review": "Literary lovers rejoice! An exceptional collection of rare books, manuscripts, and art. The library itself is a masterpiece with a magical reading room that will transport you into your favorite lord of the rings book."
   },
   {
-    "image": "/images/ny-historical.svg",
+    "image": "/images/new_york_historical_society.jpeg",
     "name": "New-York Historical Society",
     "tel": "(212) 873-3400",
     "url": "https://www.nyhistory.org/",
